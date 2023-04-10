@@ -1,0 +1,22 @@
+{
+  "name": "morsecodetranslator",
+  "version": "1.0.0",
+  "description": "## MVP",
+  "main": "MorseCodeTranslator.test.js",
+  "scripts": {
+    "test": "jest app.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0"
+  },
+  "dependencies": {
+    "ts-jest": "^29.1.0"
+  }
+}

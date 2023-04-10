@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- STYLES -->
+		<link rel="stylesheet" href="./styles.css" />
+
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Libre+Franklin:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- SCRIPTS -->
+		<script type="module" src="./script.js" defer></script>
+		<script
+			type="module"
+			src="./assets/scripts/morseCode.js"
+			defer
+		></script>
+		<title>Morse Code Translator</title>
+	</head>
+	<body>
+		<section>
+			<h1 class="page-title">Morse Code Translator</h1>
+			<div id="translateInput" class="translate-input">
+				<form
+					action=""
+					id="translateContainer"
+					class="translate-input__form"
+				>
+					<div id="langOption" class="translate-input__option">
+						<select
+							name="fromLang"
+							id="fromLang"
+							class="translate-input__option--half"
+						>
+							<option value="alphanumeric">Alphanumeric</option>
+							<option value="morseCode">Morse Code</option>
+						</select>
+						<select
+							name="toLang"
+							id="toLang"
+							class="translate-input__option--half"
+						>
+							<option value="morseCode">Morse Code</option>
+							<option value="alphanumeric">Alphanumeric</option>
+						</select>
+					</div>
+					<textarea
+						name="translateInput"
+						id="translateInput"
+						cols="30"
+						rows="10"
+						class="translate-input__textarea input-text"
+						placeholder="Enter text to translate..."
+						required
+					></textarea>
+					<div id="errorMsg" class="translate-input--error">
+						<p class="input-error"></p>
+					</div>
+					<button
+						type="button"
+						id="submitBtn"
+						class="translate-input--btn"
+					>
+						Translate for me!
+					</button>
+				</form>
+			</div>
+			<div id="translateOutput" class="translate-output translate-grid">
+				<div
+					id="translateCard"
+					class="translate-output__div translate-card no-translate-card"
+				>
+					<p
+						id="noTranslate"
+						class="translate-output__div--noTranslate"
+					>
+						Nothing to translate
+					</p>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
