@@ -1,87 +1,152 @@
 # Morse Code Translator
 
-{add test badges here, all projects you build from here on out will have tests,
-therefore you should have github workflow badges at the top of your
-repositories:
-[Github Workflow Badges](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)}
+![example workflow](https://github.com/rianns/MorseCodeTranslator/actions/workflows/main.yml/badge.svg)
 
 ## Demo & Snippets
 
--   Include hosted link
--   Include images of app if CLI or Client App
+-   [Live view](https://rianns.github.io/MorseCodeTranslator/) |
+    [Github](https://github.com/rianns/MorseCodeTranslator.git)
+-   ![Screenshot of morse code translator live version](./MorseTranslate.png)
 
 ---
 
 ## Requirements / Purpose
 
--   MVP
--   purpose of project
--   stack used and why
+### MVP
+
+-   Create a user interface that allows the user to either input some English
+    text or some Morse Code
+
+-   Create JS functions that would allow the user to:
+
+    -   translate their English text into Morse Code
+    -   Morse Code into English text
+    -   Make sure to handle spaces properly (ie. there is 1 space between
+        English words, but one space between Morse Code characters)
+
+-   Split your code between data, logic functions and dom functions
+-   Develop unit tests for all of your logic functions
+-   Explore and discover edge cases in your code to further develop your tests
+
+-   Bonus: Handle other characters as well
+-   Bonus: Detect if a piece of text is english or morse and translate
+    accordingly
+
+### Purpose
+
+-   Show consolidated knowledge and application of HTML, CSS, JS and the
+    document object model (DOM) manipulation.
+-   Apply testing using JestJS for logic validation and unit testing
+
+### stack used and why
+
+-   HTML
+-   SCSS/CSS
+-   JavaScript
 
 ---
 
 ## Build Steps
 
--   how to build / run project
--   use proper code snippets if there are any commands to run
+![File and folder structure for project](./morsetranslator.drawio.png)
+
+### Required installations and dependencies
+
+-   SASS for CSS
+-   JestJS
+-   Babel
+
+### Build
+
+1. Set up application structure using the image shown above.
+2.
+
+### Theme
+
+Colour
+
+```scss
+$primary-color-bg: #f2e9e4;
+$secondary-color-bg: #9a8c98;
+$tertiary-color-accent: #4a4e69;
+
+$primary-color-text: #22223b;
+$secondary-color-text: #4a4e69;
+```
+
+Font style
+
+```scss
+$main-font-family: "Courier Prime", monospace;
+$secondary-font-family: "Libre Franklin", sans-serif;
+```
 
 ---
 
 ## Design Goals / Approach
 
--   Design goals
--   why did you implement this the way you did?
+-   My main design goal for this project was having simple working translator
+    with a colour scheme that I do not always interact with in an effort to
+    expand my horizons with colours.
 
 ---
 
 ## Features
 
--   What features does the project have?
--   list them...
+-   Translate from Alphanumeric characters to Morse Code (and vice versa)
+-   View translation history
 
 ---
 
 ## Known issues
 
--   Remaining bugs, things that have been left unfixed
--   Features that are buggy / flimsy
+-   Drop down for languages break when the same language is chosen
+    -   e.g. (Morse Code -> Morse Code)
+-   translation results into an empty string if wrong combination of languages
+    are set
+    -   e.g. (Morse Code -> Alphanumeric)
+        -   result: empty string, no error
+-   pressing Enter/Return after typing in text area behaves unexpectedly
+    -   should handle a form submit, instead of putting the typing cursor in the
+        next line
 
 ---
 
 ## Future Goals
 
--   What are the immediate features you'd add given more time
+-   on change translation when live typing
+-   automatically select a different language on the [to language] drop down if
+    languages chosen on [from language] is the same
+    -   e.g. (Alphanumeric) on left drop down automatically sets right drop down
+        to (Morse Code)
 
 ---
 
 ## Change logs
 
--   Write a paragraph labelled with the date every day you work on the project
-    to discuss what you've done for the say. Be specific about the changes that
-    have happened for that day.
+### 11/04/2023 - Initial commit
 
-### 13/02/2022 - {Theme of changes if applicable}
-
--   Extended the expiry time of JWT tokens on the backend
--   Added users to cohort response payload
--   Centralized API base URL on frontend using the proxy `package.json` property
+-   added working translator
+-   added live version of translator
 
 ---
 
 ## What did you struggle with?
 
--   What? Why? How?
+-   I had struggled with separating DOM manipulation with the logic codes in JS.
+    I think I had a preferred method of setting up my modules. Even though the
+    codes were working fine because this application is quite small in
+    magnitude, if the application were to get bigger, adding more
+    languages/characters, my methods would have made extremely unreadable code.
 
 ---
 
 ## Licensing Details
 
--   What type of license are you releasing this under?
+-   No license
 
 ---
 
 ## Further details, related projects, reimplementations
 
--   Is this project a reimplementation for something you've done in the past? if
-    so explain it and link it here.
--   If it's an API, is there a client app that works with this project? link it
+-   This is the initial release of this project.
