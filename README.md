@@ -1,25 +1,87 @@
-### Morse Code Translator
+# Morse Code Translator
 
-## MVP
+{add test badges here, all projects you build from here on out will have tests,
+therefore you should have github workflow badges at the top of your
+repositories:
+[Github Workflow Badges](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)}
 
--   Create a user interface that allows the user to either input some English
-    text or some Morse Code
+## Demo & Snippets
 
--   Create JS functions that would allow the user to:
+-   Include hosted link
+-   Include images of app if CLI or Client App
 
-    -   translate their English text into Morse Code
-    -   Morse Code into English text
+---
 
--   Make sure to handle spaces properly (ie. there is 1 space between English
-    words, but one space between Morse Code characters)
+## Requirements / Purpose
 
--   Bonus: Handle other characters as well
+-   MVP
+-   purpose of project
+-   stack used and why
 
--   Bonus: Detect if a piece of text is english or morse and translate
-    accordingly
+---
 
--   Split your code between data, logic functions and dom functions
+## Build Steps
 
--   Develop unit tests for all of your logic functions
+-   how to build / run project
+-   use proper code snippets if there are any commands to run
 
--   Explore and discover edge cases in your code to further develop your tests
+---
+
+## Design Goals / Approach
+
+-   Design goals
+-   why did you implement this the way you did?
+
+---
+
+## Features
+
+-   What features does the project have?
+-   list them...
+
+---
+
+## Known issues
+
+-   Remaining bugs, things that have been left unfixed
+-   Features that are buggy / flimsy
+
+---
+
+## Future Goals
+
+-   What are the immediate features you'd add given more time
+
+---
+
+## Change logs
+
+-   Write a paragraph labelled with the date every day you work on the project
+    to discuss what you've done for the say. Be specific about the changes that
+    have happened for that day.
+
+### 13/02/2022 - {Theme of changes if applicable}
+
+-   Extended the expiry time of JWT tokens on the backend
+-   Added users to cohort response payload
+-   Centralized API base URL on frontend using the proxy `package.json` property
+
+---
+
+## What did you struggle with?
+
+-   What? Why? How?
+
+---
+
+## Licensing Details
+
+-   What type of license are you releasing this under?
+
+---
+
+## Further details, related projects, reimplementations
+
+-   Is this project a reimplementation for something you've done in the past? if
+    so explain it and link it here.
+-   If it's an API, is there a client app that works with this project? link it
