@@ -59,7 +59,15 @@
 ### Build
 
 1. Set up application structure using the image shown above.
-2.
+2. Created index.html with the required form input with initial styling.
+3. Started with the code to translate from alphanumeric characters to morse
+   code.
+4. Most of the DOM manipulation code is placed in the scripts folder and the
+   logic code is in the main script.js
+5. The translation occurs when the user presses the "Translate for me!" button,
+   which acts as a submit button. All the codes are reliant on this submit
+   button.
+6. Errors that require user input or alterations are shown on the DOM.
 
 ### Theme
 
@@ -85,9 +93,9 @@ $secondary-font-family: "Libre Franklin", sans-serif;
 
 ## Design Goals / Approach
 
--   My main design goal for this project was having simple working translator
-    with a colour scheme that I do not always interact with in an effort to
-    expand my horizons with colours.
+My main design goal for this project was having simple working translator with a
+colour scheme that I do not always interact with in an effort to expand my
+horizons with colours.
 
 ---
 
@@ -133,11 +141,11 @@ $secondary-font-family: "Libre Franklin", sans-serif;
 
 ## What did you struggle with?
 
--   I had struggled with separating DOM manipulation with the logic codes in JS.
-    I think I had a preferred method of setting up my modules. Even though the
-    codes were working fine because this application is quite small in
-    magnitude, if the application were to get bigger, adding more
-    languages/characters, my methods would have made extremely unreadable code.
+I had struggled with separating DOM manipulation with the logic codes in JS. I
+think I had a preferred method of setting up my modules. Even though the codes
+were working fine because this application is quite small in magnitude, if the
+application were to get bigger, adding more languages/characters, my methods
+would have made extremely unreadable code.
 
 ---
 
